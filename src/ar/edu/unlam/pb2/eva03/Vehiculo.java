@@ -1,6 +1,6 @@
 package ar.edu.unlam.pb2.eva03;
 
-public abstract class Vehiculo {
+public abstract class Vehiculo implements Comparable<Vehiculo> {
 
 	protected String modelo;
 	protected Integer codigo;
@@ -49,5 +49,10 @@ public abstract class Vehiculo {
 		} else if (!codigo.equals(other.codigo))
 			return false;
 		return true;
+	}
+	
+	@Override
+	public int compareTo(Vehiculo o) {
+		return codigo-o.codigo;
 	}
 }

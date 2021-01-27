@@ -17,4 +17,6 @@ public class Acuatico extends Vehiculo {
 		this.profundidad = profundidad;
 	}
 
+
+
 }
